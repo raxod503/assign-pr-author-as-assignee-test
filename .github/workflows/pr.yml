@@ -3,6 +3,9 @@ name: "Assign PR Author as Assignee"
 on:  
   pull_request:
     types: [opened, ready_for_review, reopened]
+    
+permissions:
+  pull-requests: write
      
 jobs:
   assign-pr-author-as-assignee:
